@@ -1,0 +1,259 @@
+.dashboard {
+  display: flex;
+  font-family: Arial, sans-serif;
+  height: 100vh; /* Full height of the viewport */
+  background-color: #ffffff;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px; /* Fixed width for sidebar */
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  position: fixed; /* Fixed positioning on the left */
+  left: 0;
+  top: 0;
+  height: 100%; /* Full height */
+  overflow-y: auto; /* Scroll if content overflows */
+}
+
+.sidebar-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-nav .nav-item {
+  padding: 10px;
+  cursor: pointer;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-nav .nav-item:hover {
+  background-color: #444;
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 250px; /* Leave space for sidebar */
+  padding: 20px;
+  overflow-y: auto; /* Scroll if content overflows */
+  height: fit-content;
+  width: fit-content;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* Cab Cards Styling */
+/* Cab Cards Styling */
+.cab-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  overflow-x: auto; /* Enable horizontal scroll if cards overflow */
+}
+
+.cab-card {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 270px; /* Set a fixed width for each card */
+  flex-shrink: 0; /* Prevent shrinking of cards */
+  border: 1px solid black; /* Add black border to each card */
+}
+
+.cab-card h3 {
+  margin: 0;
+}
+
+/* Status bullet styling */
+.status-bullet {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+/* Form and Table styling */
+.employee-form,
+.assigned-driver-table {
+  margin-top: 20px;
+}
+
+.form-half {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-row {
+  flex: 1;
+}
+
+/* Input fields styling */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Button styling */
+button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* Employee and Assigned Driver Tables styling */
+.employee-table,
+.assigned-driver-table {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.employee-table th,
+.assigned-driver-table th,
+.employee-table td,
+.assigned-driver-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.employee-table th,
+.assigned-driver-table th {
+  background-color: #f2f2f2;
+}
+
+.employee-table tr:hover,
+.assigned-driver-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Dashboard.css */
+
+/* General styling for form and table layout */
+.assigned-driver-form,
+.assigned-driver-table {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling the form for adding a driver */
+.assigned-driver-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.assigned-driver-form .form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.assigned-driver-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  
+}
+
+.assigned-driver-form label {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+/* Button for submitting the form */
+.assigned-driver-form button {
+  align-self: flex-start;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.assigned-driver-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling the table for driver details */
+.assigned-driver-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  
+}
+
+.assigned-driver-table th,
+.assigned-driver-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  background-color: #cccccc;
+
+}
+
+.assigned-driver-table th {
+  background-color: #343a40;
+  color: white;
+  font-weight: bold;
+}
+
+.assigned-driver-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.assigned-driver-table td {
+  color: #333;
+  font-size: 14px;
+}
+
+/* Add some space between table rows */
+.assigned-driver-table tbody tr {
+  margin-bottom: 10px;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .assigned-driver-form .form-row {
+    flex-direction: column;
+  }
+
+  .assigned-driver-table {
+    font-size: 12px;
+  }
+}
+

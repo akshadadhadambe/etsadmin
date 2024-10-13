@@ -1,0 +1,120 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 400px;
+  padding: 40px 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+form h1 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* Input box styling */
+.input-box {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 15px 50px 15px 20px;
+  border: 2px solid #ccc;
+  border-radius: 30px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.input-box input:focus {
+  border-color: #74ebd5;
+  background-color: #fff;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #666;
+}
+
+/* Remember and Forgot Password styling */
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.remember-forgot label {
+  cursor: pointer;
+}
+
+.remember-forgot a {
+  text-decoration: none;
+  color: #74ebd5;
+  transition: color 0.3s;
+}
+
+.remember-forgot a:hover {
+  color: #ACB6E5;
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(to right, #74ebd5, #ACB6E5);
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(to right, #ACB6E5, #74ebd5);
+}
+
+/* Register link styling */
+.Register-link {
+  font-size: 14px;
+  margin-top: 20px;
+  color: #666;
+}
+
+.Register-link a {
+  color: #74ebd5;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.Register-link a:hover {
+  color: #ACB6E5;
+}
